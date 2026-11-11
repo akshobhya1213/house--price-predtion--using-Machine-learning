@@ -1,0 +1,14 @@
+{
+  "data_source": "synthetic",
+  "n_rows": 8000,
+  "best_model": "HGB_tuned",
+  "cross_validation": {
+    "LinearRegression": {"cv_rmse_mean": 0.30043300940405915, "cv_rmse_std": 0.0030781367065096216},
+    "Ridge": {"cv_rmse_mean": 0.3004315138165586, "cv_rmse_std": 0.0030815983040561185},
+    "RandomForest": {"cv_rmse_mean": 0.29247320807060795, "cv_rmse_std": 0.005448273464574778},
+    "HistGradientBoosting": {"cv_rmse_mean": 0.29172927746928345, "cv_rmse_std": 0.004267379169731187},
+    "HGB_tuned": {"cv_rmse_mean": 0.2869670037333518, "best_params": {"model__min_samples_leaf": 10, "model__max_leaf_nodes": 15, "model__max_iter": 200, "model__learning_rate": 0.03, "model__l2_regularization": 0.1}}
+  },
+  "test_metrics": {"RMSE": 0.28810335340936, "MAE": 0.22989145215269446, "R2": 0.8913035853707221},
+  "target_unit": "$100,000"
+}
